@@ -1,0 +1,133 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font: weight 600px;;
+  background-color: #d8dfe5;
+  padding-bottom: 50px;
+}
+
+/* Sections */
+section, header, footer {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p, li {
+  margin-bottom: 10px;
+}
+
+/* Header / Home */
+header {
+  background: #053955;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: aliceblue;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: #0077b6;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+header a:hover {
+  background: #a2bbb9;
+}
+
+/* Projects */
+.project {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #053955;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.project a {
+  display:block;
+  margin-top: 10px;
+  color: #0077b6;
+  text-decoration: underline;
+}
+#contact a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077b6;
+  text-decoration: underline;
+}
+
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background: #053955;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer em {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #ade8f4;
+}
+section:hover{
+    background-color: #bdc0c3;
+}
+section div:hover{
+     background-color: #d8dfe5;   
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section, header, footer {
+    padding: 30px 15px;
+  }
+}
